@@ -45,7 +45,21 @@ Registered and Email Verification has been sent.
 }
 ```
 {% endapi-method-response-example %}
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Registered and Email Verification has been sent 2.
+{% endapi-method-response-example-description %}
 
+```javascript
+{
+    "username": "aaa",
+    "fullName": "aaaa",
+    "emailAddress": "user@email.com",
+    "registration_id": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFzZGFzZmFzZmdAZWFtYS5jb20iLCJleHAiOjE1MzA3NzIzNTkxNTl9.QZn-KRgtlG6km6QhzObacubhzuDuU5oOkAOCPTWk2IU"
+}
+```
+{% endapi-method-response-example %}
 {% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 Incomplete Fields or Validation errors.
